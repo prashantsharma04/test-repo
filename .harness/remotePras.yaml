@@ -39,4 +39,5 @@ pipeline:
       type: String
       description: ""
       required: false
-      value: <+input>.default(abc).allowedValues(abc,def,xyz)
+      default: abc
+      value: <+input>.allowedValues(abc,def,xyz)
