@@ -28,3 +28,15 @@ pipeline:
                     outputVariables: []
                   timeout: <+input>.default(15s).allowedValues(10s,25s,15s)
         tags: {}
+        variables:
+          - name: stageVar
+            type: String
+            description: ""
+            required: false
+            value: " <+pipeline.variables.pipVar>"
+  variables:
+    - name: pipVar
+      type: String
+      description: ""
+      required: false
+      value: <+input>.default(abc).allowedValues(abc,def,xyz)
