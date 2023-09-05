@@ -1,0 +1,30 @@
+pipeline:
+  name: remotePras
+  identifier: remotePras
+  projectIdentifier: naidusanity
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: custom1
+        identifier: custom1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: ShellScript
+                  name: ShellScript_1
+                  identifier: ShellScript_1
+                  spec:
+                    shell: Bash
+                    onDelegate: true
+                    source:
+                      type: Inline
+                      spec:
+                        script: exit 0
+                    environmentVariables: []
+                    outputVariables: []
+                  timeout: <+input>.default(15s).allowedValues(10s,25s,15s)
+        tags: {}
