@@ -14,12 +14,12 @@ pipeline:
           execution:
             steps:
               - step:
-                  type: ShellScript
                   identifier: ShellScript_1
+                  type: ShellScript
                   name: ShellScript_1
                   spec:
-                    shell: Bash
                     onDelegate: true
+                    shell: Bash 
                     source:
                       type: Inline
                       spec:
