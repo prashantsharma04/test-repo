@@ -33,4 +33,20 @@ pipeline:
                         value: <+input>
                     outputVariables: []
                   timeout: <+input>
+              - step:
+                  name: step1
+                  identifier: step1
+                  template:
+                    templateRef: temStep
+                    versionLabel: v1
+                    templateInputs:
+                      type: ShellScript
+                      spec:
+                        environmentVariables:
+                          - name: var1
+                            type: String
+                            value: <+input>
+                          - name: var2
+                            type: String
+                            value: <+input>
         tags: {}
