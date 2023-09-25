@@ -1,10 +1,9 @@
 template:
   name: temStep
-  identifier: temStep
   versionLabel: v1
   type: Step
-  projectIdentifier: naidusanity
   orgIdentifier: default
+  projectIdentifier: naidusanity
   tags: {}
   spec:
     timeout: 10m
@@ -23,4 +22,8 @@ template:
         type: Inline
         spec:
           script: exit 0
-      outputVariables: []
+      outputVariables:
+        - name: var3
+          type: String
+          value: <+input>
+  identifier: temStep
