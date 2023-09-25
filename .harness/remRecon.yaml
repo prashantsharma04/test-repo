@@ -56,8 +56,4 @@ pipeline:
                           - name: var4
                             type: String
                             value: <+input>
-                        source:
-                          type: Inline
-                          spec:
-                            script: <+input>
         tags: {}
