@@ -28,5 +28,5 @@ template:
       source:
         type: Inline
         spec:
-          script: <+input>
+          script: exit 0
   identifier: temStep
