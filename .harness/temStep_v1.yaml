@@ -18,6 +18,13 @@ template:
         - name: var4
           type: String
           value: <+input>
+      environmentVariables:
+        - name: var1
+          type: String
+          value: <+input>
+        - name: var2
+          type: String
+          value: <+input>
       source:
         type: Inline
         spec:
