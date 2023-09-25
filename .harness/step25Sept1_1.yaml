@@ -16,5 +16,11 @@ template:
         type: Inline
         spec:
           script: <+input>
-      environmentVariables: []
-      outputVariables: []
+      environmentVariables:
+        - name: var1
+          type: String
+          value: <+input>
+      outputVariables:
+        - name: var2
+          type: String
+          value: <+input>
