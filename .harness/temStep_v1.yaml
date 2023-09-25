@@ -12,10 +12,6 @@ template:
     spec:
       onDelegate: true
       shell: Bash
-      source:
-        type: Inline
-        spec:
-          script: <+input>
       environmentVariables:
         - name: var2
           type: String
@@ -23,4 +19,8 @@ template:
         - name: var1
           type: String
           value: <+input>
+      source:
+        type: Inline
+        spec:
+          script: exit 0
       outputVariables: []
