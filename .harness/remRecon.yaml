@@ -40,12 +40,12 @@ pipeline:
                     templateRef: temStep
                     versionLabel: v1
                     templateInputs:
+                      type: ShellScript
                       spec:
                         source:
                           type: Inline
                           spec:
                             script: <+input>
-                      type: ShellScript      
                         environmentVariables:
                           - name: var2
                             type: String
