@@ -57,3 +57,14 @@ pipeline:
                             type: String
                             value: <+input>
         tags: {}
+        variables:
+          - name: stg1Var
+            type: String
+            description: ""
+            required: false
+            value: <+input>
+          - name: stg2Var
+            type: String
+            description: ""
+            required: false
+            value: <+input>
