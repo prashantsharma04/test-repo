@@ -11,6 +11,13 @@ template:
     spec:
       onDelegate: true
       shell: Bash
+      outputVariables:
+        - name: var3
+          type: String
+          value: <+input>
+        - name: var4
+          type: String
+          value: <+input>
       environmentVariables:
         - name: var1
           type: String
@@ -22,8 +29,4 @@ template:
         type: Inline
         spec:
           script: exit 0
-      outputVariables:
-        - name: var3
-          type: String
-          value: <+input>
   identifier: temStep
