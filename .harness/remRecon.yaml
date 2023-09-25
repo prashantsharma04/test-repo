@@ -40,7 +40,6 @@ pipeline:
                     templateRef: temStep
                     versionLabel: v1
                     templateInputs:
-                      type: ShellScript
                       spec:
                         environmentVariables:
                           - name: var1
@@ -49,4 +48,5 @@ pipeline:
                           - name: var2
                             type: String
                             value: <+input>
+                      type: ShellScript
         tags: {}
