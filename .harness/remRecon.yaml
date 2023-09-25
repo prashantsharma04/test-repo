@@ -19,7 +19,7 @@ pipeline:
                   name: ShellScript_1
                   spec:
                     onDelegate: true
-                    shell: Bash 
+                    shell: Bash
                     source:
                       type: Inline
                       spec:
@@ -40,7 +40,12 @@ pipeline:
                     templateRef: temStep
                     versionLabel: v1
                     templateInputs:
+                      type: ShellScript
                       spec:
+                        source:
+                          type: Inline
+                          spec:
+                            script: <+input>
                         environmentVariables:
                           - name: var2
                             type: String
@@ -48,5 +53,4 @@ pipeline:
                           - name: var1
                             type: String
                             value: <+input>
-                      type: ShellScript
         tags: {}
