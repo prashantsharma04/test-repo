@@ -1,0 +1,20 @@
+template:
+  name: step25Sept1
+  identifier: step25Sept1
+  versionLabel: "1"
+  type: Step
+  projectIdentifier: naidusanity
+  orgIdentifier: default
+  tags: {}
+  spec:
+    timeout: 10m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: <+input>
+      environmentVariables: []
+      outputVariables: []
