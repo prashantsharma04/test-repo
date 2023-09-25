@@ -43,10 +43,10 @@ pipeline:
                       type: ShellScript
                       spec:
                         environmentVariables:
-                          - name: var2
+                          - name: var1
                             type: String
                             value: <+input>
-                          - name: var1
+                          - name: var2
                             type: String
                             value: <+input>
         tags: {}
