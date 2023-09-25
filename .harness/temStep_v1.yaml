@@ -10,12 +10,12 @@ template:
     timeout: 10m
     type: ShellScript
     spec:
-      shell: Bash
       onDelegate: true
+      shell: Bash
       source:
         type: Inline
         spec:
-          script: exit 0
+          script: <+input>
       environmentVariables:
         - name: var2
           type: String
