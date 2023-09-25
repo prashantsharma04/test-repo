@@ -49,4 +49,8 @@ pipeline:
                           - name: var2
                             type: String
                             value: <+input>
+                        outputVariables:
+                          - name: var3
+                            type: String
+                            value: <+input>
         tags: {}
