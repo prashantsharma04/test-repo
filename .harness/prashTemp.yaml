@@ -1,5 +1,5 @@
 template:
-  name: prashTemp1
+  name: prashTemp2
   identifier: prashTemp
   versionLabel: v1
   type: Pipeline
