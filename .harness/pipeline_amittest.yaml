@@ -1,0 +1,30 @@
+pipeline:
+  name: pipeline amittest
+  identifier: pipeline_amittest
+  projectIdentifier: naidusanity
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: S1
+        identifier: S1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: S1
+                  identifier: S1
+                  template:
+                    templateRef: StepAMittemp
+                    versionLabel: "1"
+                    gitBranch: patch-1
+                    templateInputs:
+                      type: ShellScript
+                      spec:
+                        source:
+                          type: Inline
+                          spec:
+                            script: <+input>
+        tags: {}
